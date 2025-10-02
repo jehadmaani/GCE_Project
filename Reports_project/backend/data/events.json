@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "name": "Traffic Light Malfunction",
+    "location": {
+      "lat": 31.951569,
+      "lng": 35.923963,
+      "address": "Interior Circle - Amman"
+    },
+    "importance": "High",
+    "type": "Traffic Light Repair",
+    "description": "The main traffic light has been out of service since morning, causing heavy traffic."
+  },
+  {
+    "id": "2",
+    "name": "Road Pothole",
+    "location": {
+      "lat": 32.555556,
+      "lng": 35.85,
+      "address": "Irbid Ring Road - Irbid"
+    },
+    "importance": "Medium",
+    "type": "Road Repair",
+    "description": "A large pothole is causing slow traffic in the area."
+  },
+  {
+    "id": "3",
+    "name": "Minor Car Accident",
+    "location": {
+      "lat": 31.963158,
+      "lng": 35.930359,
+      "address": "King Abdullah Street - Amman"
+    },
+    "importance": "High",
+    "type": "Accident",
+    "description": "Two vehicles collided with minor damages, no injuries reported."
+  }
+]
