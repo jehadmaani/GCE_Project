@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function WelcomePage() {
   return (
     <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-blue-100 to-purple-200 p-6">
-      <Card className="max-w-xl text-center shadow-lg p-6 transform transition duration-700 hover:scale-105 animate-fadeIn">
+      <Card className="max-w-xl text-center shadow-lg transform transition duration-700 hover:scale-105 animate-fade-in">
         <CardHeader>
           <CardTitle className="text-4xl font-extrabold mb-2">
             Welcome to Report Page
