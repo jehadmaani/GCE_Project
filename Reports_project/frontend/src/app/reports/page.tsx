@@ -6,7 +6,7 @@ import { fetchEvents } from "../lib/api";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 
 export default function ReportsPage() {
-  const router = useRouter();
+  const router = useRouter(); //push, replace, back, prefetch
   const { data, isLoading, error } = useQuery({
     queryKey: ["reports"],
     queryFn: fetchEvents,
@@ -21,7 +21,7 @@ export default function ReportsPage() {
         <Card
           key={report.id}
           className="shadow-md hover:shadow-lg transition cursor-pointer"
-          onClick={() => router.push(`/reports/${report.id}`)}
+          onClick={() => router.push(`/events/${report.id}`)}
         >
           <CardHeader>
             <CardTitle className="text-xl font-bold">{report.name}</CardTitle>
