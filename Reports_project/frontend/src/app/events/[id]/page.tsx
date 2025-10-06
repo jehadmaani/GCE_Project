@@ -4,6 +4,8 @@ import { Event } from "../../../../types";
 import { useQuery } from "@tanstack/react-query";
 import { fetchEventById } from "../../lib/api";
 import { useParams } from "next/navigation";
+import { EventMap } from "@/components/EventMap";
+
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 
 export default function EventDetailsPage() {
@@ -43,6 +45,10 @@ export default function EventDetailsPage() {
             </p>
           </CardContent>
         </Card>
+      </div>
+            
+      <div className="lg:w-3/5 h-[400px] lg:h-auto">
+        <EventMap location={data.location} />
       </div>
     </div>
   );

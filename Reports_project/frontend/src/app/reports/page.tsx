@@ -6,7 +6,7 @@ import { fetchEvents } from "../lib/api";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 
 export default function ReportsPage() {
-  const router = useRouter(); //push, replace, back, prefetch
+  const router = useRouter();
   const { data, isLoading, error } = useQuery({
     queryKey: ["reports"],
     queryFn: fetchEvents,
